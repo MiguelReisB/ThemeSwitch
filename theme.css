@@ -62,7 +62,8 @@ body {
     transition: 0.6s;
 }
 input:checked + .slider {
-    background-color: var(--cor-toggle-fundo)
+    background-color: var(--cor-toggle-fundo);
+    transition: 0.6s;
 }
 input:checked + .slider:before {
     background-image: url('assets/icons/Lua.png');
