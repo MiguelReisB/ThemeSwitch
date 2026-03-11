@@ -1,4 +1,4 @@
-# <p align="center"> ThemeSwitch </p>
+<h1 align="center"> ThemeSwitch </h1>
 <p align="center">
   <img src="assets/icons/PreviewThemeSwitch.gif">
 </p>
@@ -13,4 +13,7 @@
 <br>
 <p>Este botão de mudança de tema fica melhor utilizável ao colocá-lo no cabeçalho, para que seja uma das primeiras coisas que o usuário veja e mude, de acordo com sua preferência de navegação.</p>
 <p>O diferencial deste projeto é a utilização do localStorage para salvar a escolha prévia do usuário ao acessar a página para que, ao atualizar, ou sair e entrar novamente, essa escolha seja automaticamente aplicada.</p>
-<h3 align="center">Theme Switch</h3>
+
+<h4>Você acessa a página do projeto <a href="https://miguelreisb.github.io/ThemeSwitch/" target="_blank">Aqui</a>.</h4>
+
+# <h3 align="center">Theme Switch</h3>
