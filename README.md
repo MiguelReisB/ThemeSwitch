@@ -1,4 +1,7 @@
-# ThemeSwitch
+# <p align="center"> ThemeSwitch </p>
+<p align="center">
+  <img src="assets/icons/PreviewThemeSwitch.gif">
+</p>
 <p align="center">Como o nome deste pequeno repo sugere, se trata de uma página simples, contendo um input tipo checkbox cuja função é a de marcar o tema da página para que o JS aplique (claro/escuro), utilizando: HTML, CSS e um pouquinho mesmo de JS</p>
 
 <p>Os principais objetivos a serem alcançados com esse pequeno projeto é o de compartilhar esta maneira simples de mudar o tema da página, desenvolver minhas habilidades e movimentar meu perfil na rede.</p>
