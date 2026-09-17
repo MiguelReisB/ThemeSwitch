@@ -1,13 +1,10 @@
 :root {
-    --cor-fundo: #fffdd0;
+    --cor-fundo: #dbdbdb;
     --cor-dark: #333;
-    --cor-toggle-fundo: #5a5a5a;
+    --cor-toggle-fundo: #cacaca;
 }
 body.dark {
-    --cor-fundo: #1d1b1b;
-    --cor-dark: #333;
-    --cor-toggle-fundo: #7e7c7c;
-    
+    --cor-fundo: #1d1b1b;    
 }
 body {
     background-color: var(--cor-fundo);
@@ -59,14 +56,9 @@ body {
     background-image: url('assets/icons/Sol.png');
     background-size: cover;
     border-radius: 50%;
-    transition: 0.6s;
-}
-input:checked + .slider {
-    background-color: var(--cor-toggle-fundo);
-    transition: 0.6s;
+    transition: 0.4s cubic-bezier(0.5, 0.01, 0.00, 1.01);
 }
 input:checked + .slider:before {
-    background-image: url('assets/icons/Lua.png');
+    background-color: var(--cor-toggle-fundo);
     transform: translateX(80px) rotate(270deg);
-    transition: 0.6s;
 }
