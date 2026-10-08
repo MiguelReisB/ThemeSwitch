@@ -53,7 +53,6 @@ body {
     background-color: var(--cor-toggle-fundo);
     transition: .4s;
     border-radius: 40px;
-    border: 2px solid var(--cor-dark);
     box-shadow: 
         inset 3px 3px 7px var(--cor-shadow-dark),
         inset -3px -3px 7px var(--cor-shadow-light);
