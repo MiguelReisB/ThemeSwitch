@@ -1,18 +1,20 @@
+/* Raíz dos componentes */
 :root {
     --cor-fundo: #f2f2f2;
     --cor-dark: #333;
     --cor-toggle-fundo: #cacaca;
-    --cor-shadow-dark: rgba(0, 0, 0, 0.22);
-    --cor-shadow-light: rgba(255, 255, 255, 0.8);
+    --cor-shadow-dark: rgba(0, 0, 0, 0.3);
+    --cor-shadow-light: rgba(255, 255, 255, 0.7);
 }
-
+/* HTML */
+html{ -webkit-tap-highlight-color: transparent; }
+/* Body */
 body.dark {
     --cor-fundo: #1d1b1b;
-    --cor-toggle-fundo: #2b2b2b;
-    --cor-shadow-dark: rgba(0, 0, 0, 0.65);
-    --cor-shadow-light: rgba(255, 255, 255, 0.08);
+    --cor-toggle-fundo: #2a2828;
+    --cor-shadow-dark: rgba(0, 0, 0, 0.8);
+    --cor-shadow-light: rgba(255, 255, 255, 0.1);
 }
-
 body {
     background-color: var(--cor-fundo);
     margin: 0;
@@ -23,13 +25,12 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-
+/* Checkbox */
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .theme-switch {
     position: relative;
     display: inline-block;
@@ -37,13 +38,11 @@ body {
     height: 64px;
     cursor: pointer;
 }
-
 .theme-switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-
 .slider {
     position: absolute;
     cursor: pointer;
@@ -55,9 +54,10 @@ body {
     transition: .4s;
     border-radius: 40px;
     border: 2px solid var(--cor-dark);
-    box-shadow: inset 5px 5px 10px var(--cor-shadow-dark), inset -5px -5px 10px var(--cor-shadow-light);
+    box-shadow: 
+        inset 3px 3px 7px var(--cor-shadow-dark),
+        inset -3px -3px 7px var(--cor-shadow-light);
 }
-
 .slider:before {
     position: absolute;
     content: "";
@@ -68,22 +68,30 @@ body {
     top: 3px;
     background-image: url('assets/icons/Sol.png');
     background-size: cover;
+    background-position: center;
     border-radius: 50%;
     transition: 0.4s cubic-bezier(0.5, 0.01, 0.00, 1.01);
-    box-shadow: 4px 4px 10px var(--cor-shadow-dark), -4px -4px 10px var(--cor-shadow-light);
+    box-shadow: 
+        3px 3px 8px var(--cor-shadow-dark),
+        -3px -3px 8px var(--cor-shadow-light);
 }
-
 input:checked + .slider:before {
     background-image: url('assets/icons/Lua.png');
     background-color: var(--cor-toggle-fundo);
+    background-position: center;
     transform: translateX(80px) rotate(270deg);
     transition: 0.4s cubic-bezier(0.5, 0.01, 0.00, 1.01);
+    box-shadow: 
+        3px 3px 8px var(--cor-shadow-dark),
+        -3px -3px 8px var(--cor-shadow-light);
 }
-
 .theme-switch input:active + .slider {
-    box-shadow: inset 8px 8px 12px var(--cor-shadow-dark), inset -8px -8px 12px var(--cor-shadow-light);
+    box-shadow: 
+        inset 2px 2px 5px var(--cor-shadow-dark),
+        inset -2px -2px 5px var(--cor-shadow-light);
 }
-
 .theme-switch input:active + .slider:before {
-    box-shadow: inset 4px 4px 8px var(--cor-shadow-dark), inset -4px -4px 8px var(--cor-shadow-light);
+    box-shadow: 
+        inset 2px 2px 5px var(--cor-shadow-dark),
+        inset -2px -2px 5px var(--cor-shadow-light);
 }
